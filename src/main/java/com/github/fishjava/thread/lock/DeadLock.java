@@ -2,6 +2,7 @@ package com.github.fishjava.thread.lock;
 
 /**
  * 死锁
+ * 如果连续执行下面两个静态方法，将会导致死锁
  */
 public class DeadLock {
     private static Object object1 = new Object();

@@ -6,6 +6,9 @@ import static org.junit.Assert.*;
 
 public class DeadLockTest {
 
+    /**
+     * 死锁现象
+     */
     @Test
     public void doSomething(){
 

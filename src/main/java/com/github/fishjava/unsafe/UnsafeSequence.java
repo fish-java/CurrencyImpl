@@ -16,8 +16,9 @@ public class UnsafeSequence {
      *          6: putstatic     #2                  // Field value:I
      *          9: ireturn
      *
-     * 从拿到值到修改值，中间有三个指令。
-     * 这期间其他线程可能也在使用，导致线程不安全
+     * 上面是这个方法的字节码指令。
+     *   从拿到值到修改值，中间有三个指令，
+     *   这期间其他线程可能也在使用，导致线程不安全
      * @return
      */
     @NotThreadSafe
